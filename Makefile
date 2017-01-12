@@ -9,4 +9,4 @@ hero:
 	@echo git push heroku master
 
 push:
-	push heroku master
+	git push heroku master
