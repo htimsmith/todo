@@ -10,3 +10,6 @@ hero:
 
 push:
 	git push heroku master
+
+info:
+	echo underscorejs.org
