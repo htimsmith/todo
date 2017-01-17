@@ -50,6 +50,7 @@ app.get('/todos/:id', function(req, res) {
 
 
 // POST /todos
+// Create
 app.post('/todos', function(req, res) {
 	var body =  _.pick(req.body, 'description', 'completed');
 
@@ -83,6 +84,8 @@ app.delete('/todos/:id', function (req, res) {
 
 });
 
+// PUT /todos/:id
+// Update
 app.put('/todos/:id', function(req, res) {
 	var todoId = parseInt(req.params.id, 10);
 	var matchedTodo = _.findWhere(todos, {id: todoId});
