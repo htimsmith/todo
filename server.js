@@ -105,7 +105,7 @@ app.put('/todos/:id', function(req, res) {
  		return res.status(400).send();
    }
 
-   // objects in js passed by reference not value, so dont need to assign below
+   // Objects in js passed by reference not value, so dont need to assign below
    // numbers and strings dont do this, only objects
    _.extend(matchedTodo, validAttributes);
 
