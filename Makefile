@@ -12,4 +12,6 @@ push:
 	git push heroku master
 
 info:
-	echo underscorejs.org
+	@echo underscorejs.org
+	@echo control alt p
+	
